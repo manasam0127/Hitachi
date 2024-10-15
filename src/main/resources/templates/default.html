@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Layout</title>
+    <link rel="stylesheet" th:href="@{/css/screen.css}" />
+</head>
+<body>
+<div id="container">
+    <div class="dualbrand">
+        <img th:src="@{/gfx/rhjb_eap_logo.png}" width="300" height="175" alt="Logo" />
+    </div>
+    <div id="content">
+        <th:block th:fragment="content">
+            <p>Placeholder content</p>
+        </th:block>
+    </div>
+    <div id="aside">
+        <p>Learn more about our Spring Boot Application.</p> <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Product Information</a></li>
+    </ul>
+    </div>
+    <div id="footer">
+        <p>
+            This project was migrated to Spring Boot.<br />
+        </p>
+    </div>
+</div>
+</body>
+</html>
